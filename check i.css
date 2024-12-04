@@ -1,0 +1,205 @@
+
+*{
+    margin-top: 0px;
+}.banner{
+    width: 100%;
+    height: 50vh;
+
+}
+.navbar{
+    background-color: black;
+    width: 100%;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    margin-bottom: 50px;}
+.logo{
+   width: 60px;
+   border-radius: 50%;
+   position: relative;  
+   left: 35px;
+   cursor: pointer;
+   
+}
+.navbar ul li {
+   display: inline-block;
+   list-style: none;
+   margin-right: 20px;
+   right: 50px;
+}
+.navbar ul li a{
+   text-decoration: none;
+   color: #fff;
+}
+.navbar ul li {
+   position: relative;
+}
+
+.navbar ul li::after {
+   content: '';
+   width: 0;
+   height: 3px;
+   background: orange;
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   transition: width 0.5s ease;
+}
+
+.navbar ul li:hover::after {
+   width: 100%;
+}
+
+.wrapper {
+    width: 35%;
+    height: 45%;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      90deg,
+      rgb(229, 105, 4) 9%,
+      rgb(227, 145, 2) 68%,
+      rgb(255, 213, 0) 97%
+    );
+    backdrop-filter: blur(9px);
+    color: black;
+    border-radius: 12px;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma,Verdana, sans-serif; 
+}
+
+.form-login {
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif; }
+
+.wrapper .input-box {
+    position: relative;
+    width: 75%;
+    height: 20px;
+    padding: 20px;
+    margin: 10px 0 15px 0;
+}
+
+.input-box input {
+    width: 100%;
+    margin-left: -20px;
+    margin-top: -50px;
+    height: 100%;
+    background: white;
+    border: none;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 40px;
+    font-size: 16px;
+    color: black;
+    padding: 16px 25px 20px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.input-box input::placeholder {
+    color:black;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.wrapper .btn {
+    width: 150px;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 20px;
+    color: #333;
+    font-weight: 600;
+    margin-left: 230px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+    font-family: 'Poppins', sans-serif; 
+}
+
+/* Add hover effect */
+.wrapper .btn:hover {
+    background-color:orange;
+}
+.footer{
+    width: 100vh;
+    padding-top :40px;
+    overflow: hidden;
+    
+    
+}
+.footer-container .row.container h1{
+    font-size: 50px;
+    
+}
+.footer-container{
+    background-color: black;
+    position: absolute;
+    top:720px;
+    color:white;
+    height: auto;
+    width: 100%;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    overflow-x: hidden;
+}
+.footer-container h3{
+    color:white;   
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 3rem;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+.socials a:hover i{
+    color: #FFA500;
+}
+.content-container{
+    text-align: center;
+    width:30%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+@keyframes logorotation{
+    from{
+      transform: rotate(0);
+    }
+    to{
+     transform: rotate(360deg);
+
+    }
+}
+.navbar img{
+    animation-name: logorotation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    
+}
